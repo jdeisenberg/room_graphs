@@ -9,7 +9,7 @@ room in the building is in use by day of week and hour of day (from 0700
 to 2300). The data is in a file named `roster_data.cljs`; in the production
 version the data comes from a server as JSON data.
 
-You can see it in action [here][http://langintro.com/room_graphs].
+You can see it in action [here](http://langintro.com/room_graphs).
 
 ## Setup
 
