@@ -1,4 +1,17 @@
 (ns room_graphs.roster-data)
+;; Each entry consists of:
+;;   Section registration ID
+;;   Section number
+;;   Subject
+;;   Course number
+;;   Short course name
+;;   Days of week
+;;   Starting time
+;;   Ending time
+;;   Room
+;;   Start date
+;;   End date
+;;   Building
 (def section-list [["83841", "201", "AJ", "010", "Intro to Admin of Justice", "MW", "09:15 AM", "10:35 AM", "PE105", "08/29/16", "12/15/16", "2PE"],
                    ["83842", "202", "AJ", "010", "Intro to Admin of Justice", "TTH", "09:15 AM", "10:35 AM", "PE105", "08/29/16", "12/15/16", "2PE"],
                    ["83843", "203", "AJ", "010", "Intro to Admin of Justice", "TTH", "10:45 AM", "12:05 PM", "PE105", "08/29/16", "12/15/16", "2PE"],
