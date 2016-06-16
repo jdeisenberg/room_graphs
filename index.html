@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/basic.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/printbasic.css" media="print"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    td {
+        border: 1px solid gray;
+        padding: 0.5em;
+    }
+    .room {font-size: 150%}
+    #roomTable { margin-top: 1em; }
+    rect {fill: green; stroke: none;}
+  </style>
+
+  </head>
+  <body>
+    <h1>Room Graphs</h1>
+
+    <!--
+      This SVG draws a grid for time from 7 a.m. to 11 p.m.
+      Monday through Sunday. This could be generated
+      algorithmically, but it was just as easy to do in markup.
+    -->
+    <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+      <defs>
+        <g id="grid">
+          <path style="stroke:black; fill:none"
+            d="M0 0h360M0 15h360M0 30h360M0 45h360M0 60h360M0 75h360M0 90h360M0 105h360M0 120h360
+            M0 0v120M20 0v120M40 0v120M60 0v120M80 0v120M100 0v120M120 0v120M140 0v120M160 0v120M180 0v120
+            M200 0v120M220 0v120M240 0v120M260 0v120M280 0v120M300 0v120M320 0v120M340 0v120M360 0v120"/>
+          <g style="fill:black; stroke:none; font-size: 10pt; text-anchor:middle">
+            <text x="30" y="12">7</text>
+            <text x="50" y="12">8</text>
+            <text x="70" y="12">9</text>
+            <text x="90" y="12">10</text>
+            <text x="110" y="12">11</text>
+            <text x="130" y="12">12</text>
+            <text x="150" y="12">13</text>
+            <text x="170" y="12">14</text>
+            <text x="190" y="12">15</text>
+            <text x="210" y="12">16</text>
+            <text x="230" y="12">17</text>
+            <text x="250" y="12">18</text>
+            <text x="270" y="12">19</text>
+            <text x="290" y="12">20</text>
+            <text x="310" y="12">21</text>
+            <text x="330" y="12">22</text>
+            <text x="350" y="12">23</text>
+            <text x="10" y="27">M</text>
+            <text x="10" y="42">T</text>
+            <text x="10" y="57">W</text>
+            <text x="10" y="72">Th</text>
+            <text x="10" y="87">F</text>
+            <text x="10" y="102">Sa</text>
+            <text x="10" y="117">Su</text>
+          </g>
+        </g>
+      </defs>
+    </svg>
+
+        Building
+        <select id="building">
+          <option value="">--</option>
+          <option value="2A">Acacia</option>
+          <option value="2AT">Auto Tech</option>
+          <option value="2C">Cedro</option>
+          <option value="2F">Field (Athletics)</option>
+          <option value="2FC">Fitness Center</option>
+          <option value="2GYM">Gym</option>
+          <option value="2LE">Library/Educational Tech Center</option>
+          <option value="2MS3">Math/Science</option>
+          <option value="2OFC">Off Campus</option>
+          <option value="2PE">PE</option>
+          <option value="2R">Roble</option>
+          <option value="2S">Sequoia</option>
+          <option value="2SSC">Student Center</option>
+          <option value="2TC">Tennis Courts</option>
+          <option value="2VPA">Visual/Performing Arts</option>
+        </select>
+
+        <div id="roomTable"></div>
+
+        <p>
+          <a href="https://github.com/jdeisenberg/room_graphs">See source on Github</a>
+        </p>
+        <script src="release/room_graphs.js" type="text/javascript"></script>
+  </body>
+</html>
