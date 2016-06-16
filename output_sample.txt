@@ -1,1 +1,0 @@
-{"room" "VPA202", "description" "", "capacity" 37,"days" [1,3], "startTime" "12 15 00", "endTime" "13 05 00", "startDate" "2016-08-29", "endDate" "2016-12-15", "status" "A"}
