@@ -1,17 +1,8 @@
 (ns room_graphs.roster-data)
-;; Each entry consists of:
-;;   Section registration ID
-;;   Section number
-;;   Subject
-;;   Course number
-;;   Short course name
-;;   Days of week
-;;   Starting time
-;;   Ending time
-;;   Room
-;;   Start date
-;;   End date
-;;   Building
+;;
+;; The section list is a series of maps, which mimics the JSON
+;; returned by the server when the databse is queried
+
 (def syms [:reg-id :section :subject :course :title :days :start-time :end-time
            :room :start-date :end-date :building])
 (def section-list [{:reg-id "83841", :section "201", :subject "AJ", :course "010", :title "Intro to Admin of Justice",}

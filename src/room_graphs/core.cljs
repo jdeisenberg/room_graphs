@@ -37,13 +37,13 @@
  "Create SVG rectangles for the given set of day-times"
  [timeset]
  (html
-   [:svg {:width 380 :height 135}]
-   (map (fn [[day start end]])
-     (let [x (+ 20 (* start 5))])
-     y (* day 15)
-     w (* 5 (- end start))
-     [:rect {:x x :y y :width w :height 15}])) timeset
-     [:use {:xlink:href "#grid"}])
+   [:svg {:width 380 :height 135}
+    (map (fn [[day start end]]
+          (let [x (+ 20 (* start 5))
+                y (* day 15)
+                w (* 5 (- end start))]
+           [:rect {:x x :y y :width w :height 15}])) timeset)
+    [:use {:xlink:href "#grid"}]]))
 
 (defn display-sections
   "Create a table with one row for each room. The key for
