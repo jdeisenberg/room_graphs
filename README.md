@@ -11,6 +11,9 @@ version the data comes from a server as JSON data.
 
 You can see it in action [here](http://langintro.com/room_graphs).
 
+Thanks to Creighton Kirkendall for suggestions on how to make
+code more idiomatic ClojureScript.
+
 ## Setup
 
 Most of the following scripts require [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/) (on OS X installable via brew).
