@@ -5,8 +5,8 @@
 
 (def syms [:reg-id :section :subject :course :title :days :start-time :end-time
            :room :start-date :end-date :building])
-(def section-list [{:reg-id "83841", :section "201", :subject "AJ", :course "010", :title "Intro to Admin of Justice",}
-                   :days "MW", :start-time "09:15 AM", :end-time "10:35 AM", :room "PE105", :start-date "08/29/16", :end-date "12/15/16", :building "2PE",
+(def section-list [{:reg-id "83841", :section "201", :subject "AJ", :course "010", :title "Intro to Admin of Justice",
+                   :days "MW", :start-time "09:15 AM", :end-time "10:35 AM", :room "PE105", :start-date "08/29/16", :end-date "12/15/16", :building "2PE"},
                    {:reg-id "83842", :section "202", :subject "AJ", :course "010", :title "Intro to Admin of Justice",
                      :days "TTH", :start-time "09:15 AM", :end-time "10:35 AM", :room "PE105", :start-date "08/29/16", :end-date "12/15/16", :building "2PE"},
                    {:reg-id "83843", :section "203", :subject "AJ", :course "010", :title "Intro to Admin of Justice",
